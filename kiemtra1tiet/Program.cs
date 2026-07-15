@@ -14,13 +14,16 @@ switch (choice)
         goto Menu; break;
     case "2" : 
         game.setBet();
-        break;
+        
+        goto Menu;break;
     case "3" : game.thongKe(); 
-        break;
+        goto Menu;break;
     case "4" :
         Console.WriteLine($"Thoat game");
         break;
-    default: Console.WriteLine("Vui lòng chọn lại"); goto Menu; break;
+    default: Console.WriteLine("Vui lòng chọn 1-4");
+        goto Menu; 
+        break;
 }
 
 

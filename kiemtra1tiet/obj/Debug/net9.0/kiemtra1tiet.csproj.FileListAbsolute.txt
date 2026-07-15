@@ -12,3 +12,4 @@ C:\Users\ADMIN\RiderProjects\Bài tập về nhà\kiemtra1tiet\kiemtra1tiet\obj\
 C:\Users\ADMIN\RiderProjects\Bài tập về nhà\kiemtra1tiet\kiemtra1tiet\obj\Debug\net9.0\kiemtra1tiet.pdb
 C:\Users\ADMIN\RiderProjects\Bài tập về nhà\kiemtra1tiet\kiemtra1tiet\obj\Debug\net9.0\kiemtra1tiet.genruntimeconfig.cache
 C:\Users\ADMIN\RiderProjects\Bài tập về nhà\kiemtra1tiet\kiemtra1tiet\obj\Debug\net9.0\ref\kiemtra1tiet.dll
+C:\Users\ADMIN\RiderProjects\Bài tập về nhà\kiemtra1tiet\kiemtra1tiet\obj\Debug\net9.0\kiemtra1tiet.sourcelink.json
