@@ -2,7 +2,7 @@
 
 public class Game
 {
-    public double soDu = 1000;
+    public double soDu { get; private set; } = 1000; //thêm private set để tránh bị sửa từ bên ngoài
     protected int totalRound { get; set; } = 0;
     protected int winRound { get; set; } = 0;
     protected int lostRound { get; set; } = 0;
@@ -26,16 +26,7 @@ public class Game
         bets[linhVatIndex] += amount;
     }
 
-    public void totalMoney()
-    {
-        int betSum = 0;
-        for (int i = 0; i < bets.Length; i++)
-        {
-            betSum += bets[i];
-        }
 
-        Console.WriteLine(betSum);
-    }
 
 
     public void setBet()
@@ -81,7 +72,7 @@ public class Game
                     case 2:
 
                         //tung xúc xắc
-                        Random dice = new Random();
+                        private Random dice = new Random();
                         int[] rolls = new int[3];
                         for (int i = 0; i < 3; i++)
                         {
@@ -106,7 +97,8 @@ public class Game
 
                                 if (count > 0) //Nhân khi có lượt thắng
                                 {
-                                    thisRoundWinMoney += bets[i] * count;
+                                    thisRoundWinMoney += bets[i] * (count + 1);
+                                    //cần trả lại phần tiền bets đã thu ban đầu + số tiền đã thắng
                                 }
                                 // nếu count == 0 thì đã mất tiền cược khi trừ ở trên
                             }
