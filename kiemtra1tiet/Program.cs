@@ -5,6 +5,12 @@
 using kiemtra1tiet;
 Game game = new Game();
 Menu:
+  if(game.soDu <= 0)
+    {
+        Console.WriteLine("Bạn đã hết tiền! Game Over!");
+        game.thongKe();
+        return; // kết thúc chương trình
+    }
 Console.WriteLine("1. Số dư 2. Chơi 3. thống kê 4. thoát");
 string choice  = Console.ReadLine();
 switch (choice)
