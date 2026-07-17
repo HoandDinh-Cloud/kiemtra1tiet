@@ -8,7 +8,8 @@ public class Game
     protected int lostRound { get; set; } = 0;
     protected double maxWin { get; set; } = 0;
 
-    public string[] linhVat = { "Bau", "Cua", "Tom", "Ca", "Ga", "Nai" };
+    public string[] linhVat = {  "Bầu", "Cua", "Tôm", "Cá", "Gà", "Nai" };
+    private Random dice = new Random();
 
     //Bet
     protected int[] bets { get; set; } = new int[6];
@@ -72,7 +73,7 @@ public class Game
                     case 2:
 
                         //tung xúc xắc
-                        private Random dice = new Random();
+                        
                         int[] rolls = new int[3];
                         for (int i = 0; i < 3; i++)
                         {
